@@ -1,5 +1,7 @@
 # ott-fizz-buzz
 
+This is "Over The Top" fizz buzz. A project created to learn python using simple logic.
+
 Run with 
 ```cmd
 python fizzbuzz.py "rules" [--min MIN] [--max MAX]
