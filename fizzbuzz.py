@@ -1,9 +1,20 @@
-for i in range(1, 100):
-  if i % 3 == 0 and i % 5 == 0:
-    print('fizzbuzz')
-  elif i % 3 == 0:
-    print('fizz')
-  elif i % 5 == 0:
-    print('buzz')
-  else:
-    print(i)
+rules = {
+  'red': 4,
+  'yellow': 7
+}
+  
+def parseOutput(number, ruleDict):
+  out = ''
+  for name, value in ruleDict.items():
+    if i % value == 0:
+      out += name
+  return out
+
+print('Over engineered fizz buzz')
+print('Rules')
+print(rules)
+for i in range(1, 101):
+  out = parseOutput(i, rules)
+  if out.__len__() == 0:
+    out = i
+  print(out)
