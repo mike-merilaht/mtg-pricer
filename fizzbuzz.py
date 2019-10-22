@@ -15,7 +15,6 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
-
 rulesDict = json.loads(args.rules)
 
 
@@ -30,8 +29,8 @@ def parseOutput(number, ruleDict):
 def checkRules(rules):
     # Make sure that each key in the rule dictionary has an integer as a value
     for key, value in rules.items():
-        if (not isinstance(value, int)):
-            raise ValueError(f'the key "{key}" in the rules does not have a valid')
+        if not isinstance(value, int):
+            raise ValueError(f'The key "{key}" in the rules does not have a valid')
     return True
 
 
@@ -45,5 +44,6 @@ def fizzBuzzRunner(rules, min, max):
             print(out)
     except ValueError as ve:
         print(ve)
+
 
 fizzBuzzRunner(rulesDict, args.min, args.max)
