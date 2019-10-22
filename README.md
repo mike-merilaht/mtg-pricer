@@ -11,6 +11,17 @@ python fizzbuzz.py "rules" [--min MIN] [--max MAX]
 
 The rules argument is a JSON string that defines a word and a number pairing. The word will be replaced using the number and the rules of [FizzBuzz](https://en.m.wikipedia.org/wiki/Fizz_buzz).
 
+### Example
+
+This is a prettied version of the JSON rules used in the examples later in this read me
+
+```JSON
+{
+  "fizz": 3,
+  "buzz": 5
+}
+```
+
 ## Examples
 
 Run basic fizzbuzz over the range 1 - 100 (inclusive)
